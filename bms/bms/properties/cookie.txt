@@ -1,0 +1,2 @@
+Rgn#|Code=BANG|text=Bengaluru|
+Rgn#|Code=NCR|text=Gurugram (Gurgaon)|subregionDetails={'RegionCode':'NCR','RegionName':'National Capital Region (NCR)','SubRegionCode':'GURG','SubRegionName':'Gurugram (Gurgaon)'}|

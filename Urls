@@ -1,0 +1,14 @@
+	Get Region Data 
+1) https://in.bookmyshow.com/serv/getData/?cmd=GETREGIONS
+
+	Trending Search
+2) https://in.bookmyshow.com/serv/getData?cmd=GETTRENDINGSEARCH&_=1513537519919	
+
+	Prefered Cinemas
+3) https://in.bookmyshow.com/serv/getData?cmd=GETPREFERREDCINEMAS&_=1513537518769
+	
+	QuickBook
+4) https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=1513537518768
+
+
+5) https://in.bookmyshow.com/serv/getData.bms?cmd=GETGROUPRATING&event_group=EG00019691

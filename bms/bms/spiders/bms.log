@@ -1,0 +1,1285 @@
+2018-01-23 00:57:52 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: bms)
+2018-01-23 00:57:52 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'bms', 'DOWNLOAD_DELAY': 2, 'LOG_FILE': 'bms.log', 'NEWSPIDER_MODULE': 'bms.spiders', 'RETRY_HTTP_CODES': [500, 503, 504, 400, 403, 404, 408], 'RETRY_TIMES': 10, 'SPIDER_MODULES': ['bms.spiders']}
+2018-01-23 00:58:06 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: bms-db)
+2018-01-23 00:58:06 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'bms-db', 'DOWNLOAD_DELAY': 2, 'LOG_FILE': 'bms.log', 'NEWSPIDER_MODULE': 'bms.spiders', 'RETRY_HTTP_CODES': [500, 503, 504, 400, 403, 404, 408], 'RETRY_TIMES': 10, 'SPIDER_MODULES': ['bms.spiders']}
+2018-01-23 00:58:49 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: bms_db)
+2018-01-23 00:58:49 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'bms_db', 'DOWNLOAD_DELAY': 2, 'LOG_FILE': 'bms.log', 'NEWSPIDER_MODULE': 'bms.spiders', 'RETRY_HTTP_CODES': [500, 503, 504, 400, 403, 404, 408], 'RETRY_TIMES': 10, 'SPIDER_MODULES': ['bms.spiders']}
+2018-01-23 00:58:49 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-01-23 00:58:49 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'bms.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-01-23 00:58:49 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-01-23 00:58:49 [scrapy.middleware] INFO: Enabled item pipelines:
+['bms.pipelines.BmsPipeline']
+2018-01-23 00:58:49 [scrapy.core.engine] INFO: Spider opened
+2018-01-23 00:58:49 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-01-23 00:58:49 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-01-23 00:58:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091> (referer: in.bookmyshow.com)
+2018-01-23 00:58:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'UA',
+ 'duration': '163',
+ 'genre': '|DRAMA|PERIOD |',
+ 'groupId': 'EG00028410',
+ 'groupName': 'Padmaavat'}
+2018-01-23 00:58:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Period ': [], 'Plays': ['Drama']},
+ 'movieDimension': '3D',
+ 'movieDuration': '163',
+ 'movieId': 'ET00046516',
+ 'movieLanguage': 'Hindi',
+ 'movieName': 'Padmaavat (3D)',
+ 'movieStartDate': '2018-01-25',
+ 'movieSynopsis': 'Set in 1303 AD medieval India, Padmaavat is the story of '
+                  'honour, valour and obsession. Queen Padmavati is known for '
+                  'her exceptional beauty along with a strong sense of justice '
+                  'and is the wife of Maharawal Ratan Singh and pride of the '
+                  'Kingdom of Chittor, a prosperous kingdom in the north west '
+                  'of India.<br/><br/>The legend of her beauty reaches the '
+                  'reigning sultan of Hindustan-Allaudin Khilji. The sultan '
+                  'who is a tyrant, is fixated with wanting anything that is '
+                  'of exceptional beauty for himself. He lays siege on the '
+                  'impregnable fortress of Chittorgarh.<br/><br/>After a '
+                  'gruelling 6 months, he returns empty handed. He becomes '
+                  'obsessed and now wants to capture Chittor and its Queen at '
+                  'any cost. He returns with a bigger army and raging fury. He '
+                  'attacks Chittor with brutal force and a bloody and fearsome '
+                  'battle takes place between the righteous Maharawal Ratan '
+                  'Singh defending his kingdom and the honour of his Queen and '
+                  'Sultan Allaudin Khilji. Khilji manages to breach the '
+                  'fortress but it goes in vain as the Queen chooses to make '
+                  'the ultimate sacrifice to protect her dignity.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=8YaF2m7hCx0&app=desktop',
+ 'movieType': 'MT'}
+2018-01-23 00:58:55 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00046516-MT/20180124
+2018-01-23 00:58:55 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00046516-MT/20180124
+2018-01-23 00:58:55 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00046516-MT/20180124> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-01-23 00:58:55 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00046516-MT/20180124
+2018-01-23 00:58:55 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00046516
+2018-01-23 00:58:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Period ': [], 'Plays': ['Drama']},
+ 'movieDimension': 'IMAX 3D',
+ 'movieDuration': '163',
+ 'movieId': 'ET00069513',
+ 'movieLanguage': 'Hindi',
+ 'movieName': 'Padmaavat (IMAX 3D)',
+ 'movieStartDate': '2018-01-25',
+ 'movieSynopsis': 'Set in 1303 AD medieval India, Padmaavat is the story of '
+                  'honour, valour and obsession. Queen Padmavati is known for '
+                  'her exceptional beauty along with a strong sense of justice '
+                  'and is the wife of Maharawal Ratan Singh and pride of the '
+                  'Kingdom of Chittor, a prosperous kingdom in the north west '
+                  'of India.<br/><br/>The legend of her beauty reaches the '
+                  'reigning sultan of Hindustan-Allaudin Khilji. The sultan '
+                  'who is a tyrant, is fixated with wanting anything that is '
+                  'of exceptional beauty for himself. He lays siege on the '
+                  'impregnable fortress of Chittorgarh.<br/><br/>After a '
+                  'gruelling 6 months, he returns empty handed. He becomes '
+                  'obsessed and now wants to capture Chittor and its Queen at '
+                  'any cost. He returns with a bigger army and raging fury. He '
+                  'attacks Chittor with brutal force and a bloody and fearsome '
+                  'battle takes place between the righteous Maharawal Ratan '
+                  'Singh defending his kingdom and the honour of his Queen and '
+                  'Sultan Allaudin Khilji. Khilji manages to breach the '
+                  'fortress but it goes in vain as the Queen chooses to make '
+                  'the ultimate sacrifice to protect her dignity.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=8YaF2m7hCx0&app=desktop',
+ 'movieType': 'MT'}
+2018-01-23 00:58:55 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069513-MT/20180124
+2018-01-23 00:58:55 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069513-MT/20180124
+2018-01-23 00:58:55 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069513-MT/20180124
+2018-01-23 00:58:55 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00069513
+2018-01-23 00:58:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Period ': [], 'Plays': ['Drama']},
+ 'movieDimension': '2D',
+ 'movieDuration': '163',
+ 'movieId': 'ET00069426',
+ 'movieLanguage': 'Hindi',
+ 'movieName': 'Padmaavat (2D Hindi)',
+ 'movieStartDate': '2018-01-25',
+ 'movieSynopsis': 'Set in 1303 AD medieval India, Padmaavat is the story of '
+                  'honour, valour and obsession. Queen Padmavati is known for '
+                  'her exceptional beauty along with a strong sense of justice '
+                  'and is the wife of Maharawal Ratan Singh and pride of the '
+                  'Kingdom of Chittor, a prosperous kingdom in the north west '
+                  'of India.<br/><br/>The legend of her beauty reaches the '
+                  'reigning sultan of Hindustan-Allaudin Khilji. The sultan '
+                  'who is a tyrant, is fixated with wanting anything that is '
+                  'of exceptional beauty for himself. He lays siege on the '
+                  'impregnable fortress of Chittorgarh.<br/><br/>After a '
+                  'gruelling 6 months, he returns empty handed. He becomes '
+                  'obsessed and now wants to capture Chittor and its Queen at '
+                  'any cost. He returns with a bigger army and raging fury. He '
+                  'attacks Chittor with brutal force and a bloody and fearsome '
+                  'battle takes place between the righteous Maharawal Ratan '
+                  'Singh defending his kingdom and the honour of his Queen and '
+                  'Sultan Allaudin Khilji. Khilji manages to breach the '
+                  'fortress but it goes in vain as the Queen chooses to make '
+                  'the ultimate sacrifice to protect her dignity.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=8YaF2m7hCx0&app=desktop',
+ 'movieType': 'MT'}
+2018-01-23 00:58:56 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069426-MT/20180124
+2018-01-23 00:58:56 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069426-MT/20180124
+2018-01-23 00:58:56 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069426-MT/20180124
+2018-01-23 00:58:56 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00069426
+2018-01-23 00:58:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Period ': [], 'Plays': ['Drama']},
+ 'movieDimension': '2D',
+ 'movieDuration': '163',
+ 'movieId': 'ET00069202',
+ 'movieLanguage': 'Tamil',
+ 'movieName': 'Padmaavat (Tamil)',
+ 'movieStartDate': '2018-01-25',
+ 'movieSynopsis': 'Setin 1303 AD medieval India, Padmaavat is the story of '
+                  'honor, valor and<br/>obsession. Queen Padmavati is known '
+                  'for her exceptional beauty along with a<br/>strong sense of '
+                  'justice and is the wife of Maharawal Ratan Singh and pride '
+                  'of the<br/>Kingdom of Chittor, a prosperous kingdom in the '
+                  'north west of India. The legend<br/>of her beauty reaches '
+                  'the reigning sultan of Hindustan  Allaudin Khilji. The '
+                  'sultan<br/>who is a tyrant, is fixated with wanting '
+                  'anything that is of exceptional beauty for<br/>himself. He '
+                  'lays siege on the impregnable fortress of Chittorgarh. '
+                  'After a grueling<br/>6 months, he returns empty handed. He '
+                  'becomes obsessed and now wants to<br/>capture Chittor and '
+                  'its Queen at any cost. He returns with a bigger army '
+                  'and<br/>ranging fury. He attacks Chittor with brutal force '
+                  'and a bloody and fearsome<br/>battle takes places between '
+                  'the righteous Maharawal Ratan Singh defending '
+                  'his<br/>kingdom and the honor of his queen and Sultan '
+                  'Allaudin Khilji. Khilji manages to<br/>breach the fortress '
+                  'but in vain as the Queen chooses to make the ultimate '
+                  'sacrifice<br/>to protect her dignity.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=lBJwxqNKQho',
+ 'movieType': 'MT'}
+2018-01-23 00:58:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278> (referer: in.bookmyshow.com)
+2018-01-23 00:58:56 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069202-MT/20180124
+2018-01-23 00:58:56 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069202-MT/20180124
+2018-01-23 00:58:56 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069202-MT/20180124
+2018-01-23 00:58:56 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00069202
+2018-01-23 00:58:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Period ': [], 'Plays': ['Drama']},
+ 'movieDimension': '2D',
+ 'movieDuration': '163',
+ 'movieId': 'ET00069203',
+ 'movieLanguage': 'Telugu',
+ 'movieName': 'Padmaavat (Telugu)',
+ 'movieStartDate': '2018-01-25',
+ 'movieSynopsis': 'Setin 1303 AD medieval India, Padmaavat is the story of '
+                  'honor, valor and<br/>obsession. Queen Padmavati is known '
+                  'for her exceptional beauty along with a<br/>strong sense of '
+                  'justice and is the wife of Maharawal Ratan Singh and pride '
+                  'of the<br/>Kingdom of Chittor, a prosperous kingdom in the '
+                  'north west of India. The legend<br/>of her beauty reaches '
+                  'the reigning sultan of Hindustan  Allaudin Khilji. The '
+                  'sultan<br/>who is a tyrant, is fixated with wanting '
+                  'anything that is of exceptional beauty for<br/>himself. He '
+                  'lays siege on the impregnable fortress of Chittorgarh. '
+                  'After a grueling<br/>6 months, he returns empty handed. He '
+                  'becomes obsessed and now wants to<br/>capture Chittor and '
+                  'its Queen at any cost. He returns with a bigger army '
+                  'and<br/>ranging fury. He attacks Chittor with brutal force '
+                  'and a bloody and fearsome<br/>battle takes places between '
+                  'the righteous Maharawal Ratan Singh defending '
+                  'his<br/>kingdom and the honor of his queen and Sultan '
+                  'Allaudin Khilji. Khilji manages to<br/>breach the fortress '
+                  'but in vain as the Queen chooses to make the ultimate '
+                  'sacrifice<br/>to protect her dignity.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=08x26Gjq_qU',
+ 'movieType': 'MT'}
+2018-01-23 00:58:57 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069203-MT/20180124
+2018-01-23 00:58:57 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069203-MT/20180124
+2018-01-23 00:58:57 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069203-MT/20180124
+2018-01-23 00:58:57 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00069203
+2018-01-23 00:58:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'UA',
+ 'duration': '159',
+ 'genre': '|COMEDY|DRAMA|',
+ 'groupId': 'EG00043542',
+ 'groupName': 'Raju Kannada Medium'}
+2018-01-23 00:58:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'censor': 'UA',
+ 'duration': '163',
+ 'genre': '|DRAMA|PERIOD |',
+ 'groupId': 'EG00028410',
+ 'groupName': 'Padmaavat'}
+2018-01-23 00:58:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Plays': ['Comedy', 'Drama']},
+ 'movieDimension': '2D',
+ 'movieDuration': '159',
+ 'movieId': 'ET00063154',
+ 'movieLanguage': 'Kannada',
+ 'movieName': 'Raju Kannada Medium',
+ 'movieStartDate': '2018-01-19',
+ 'movieSynopsis': 'The movie is the story of a village boy who is constantly '
+                  'trying to understand what life is. He is highly ambitious '
+                  'and goes out of his village to achieve his dreams. In every '
+                  'stage of his life, he encounters different challenges and '
+                  'struggles, which make his path very difficult. Will he be '
+                  'able to deal with his struggles and achieve what he wants '
+                  'in life?',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=Rv3QpK7av0Q',
+ 'movieType': 'MT'}
+2018-01-23 00:58:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Period ': [], 'Plays': ['Drama']},
+ 'movieDimension': '3D',
+ 'movieDuration': '163',
+ 'movieId': 'ET00046516',
+ 'movieLanguage': 'Hindi',
+ 'movieName': 'Padmaavat (3D)',
+ 'movieStartDate': '2018-01-25',
+ 'movieSynopsis': 'Set in 1303 AD medieval India, Padmaavat is the story of '
+                  'honour, valour and obsession. Queen Padmavati is known for '
+                  'her exceptional beauty along with a strong sense of justice '
+                  'and is the wife of Maharawal Ratan Singh and pride of the '
+                  'Kingdom of Chittor, a prosperous kingdom in the north west '
+                  'of India.<br/><br/>The legend of her beauty reaches the '
+                  'reigning sultan of Hindustan-Allaudin Khilji. The sultan '
+                  'who is a tyrant, is fixated with wanting anything that is '
+                  'of exceptional beauty for himself. He lays siege on the '
+                  'impregnable fortress of Chittorgarh.<br/><br/>After a '
+                  'gruelling 6 months, he returns empty handed. He becomes '
+                  'obsessed and now wants to capture Chittor and its Queen at '
+                  'any cost. He returns with a bigger army and raging fury. He '
+                  'attacks Chittor with brutal force and a bloody and fearsome '
+                  'battle takes place between the righteous Maharawal Ratan '
+                  'Singh defending his kingdom and the honour of his Queen and '
+                  'Sultan Allaudin Khilji. Khilji manages to breach the '
+                  'fortress but it goes in vain as the Queen chooses to make '
+                  'the ultimate sacrifice to protect her dignity.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=8YaF2m7hCx0&app=desktop',
+ 'movieType': 'MT'}
+2018-01-23 00:58:58 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00063154-MT/20180124
+2018-01-23 00:58:58 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00063154-MT/20180124
+2018-01-23 00:58:58 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00063154-MT/20180124
+2018-01-23 00:58:58 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00063154
+2018-01-23 00:58:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'U',
+ 'duration': '144',
+ 'genre': '|COMEDY|DRAMA|SAT|',
+ 'groupId': 'EG00037803',
+ 'groupName': 'Humble Politician Nograj'}
+2018-01-23 00:58:58 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://in.bookmyshow.com/bengaluru/movies/padmaavat-3d/ET00046516> from <GET https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00046516>
+2018-01-23 00:58:58 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00046516-MT/20180124
+2018-01-23 00:58:58 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00046516-MT/20180124
+2018-01-23 00:58:58 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00046516-MT/20180124
+2018-01-23 00:58:58 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00046516
+2018-01-23 00:58:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Period ': [], 'Plays': ['Drama']},
+ 'movieDimension': '2D',
+ 'movieDuration': '163',
+ 'movieId': 'ET00069426',
+ 'movieLanguage': 'Hindi',
+ 'movieName': 'Padmaavat (2D Hindi)',
+ 'movieStartDate': '2018-01-25',
+ 'movieSynopsis': 'Set in 1303 AD medieval India, Padmaavat is the story of '
+                  'honour, valour and obsession. Queen Padmavati is known for '
+                  'her exceptional beauty along with a strong sense of justice '
+                  'and is the wife of Maharawal Ratan Singh and pride of the '
+                  'Kingdom of Chittor, a prosperous kingdom in the north west '
+                  'of India.<br/><br/>The legend of her beauty reaches the '
+                  'reigning sultan of Hindustan-Allaudin Khilji. The sultan '
+                  'who is a tyrant, is fixated with wanting anything that is '
+                  'of exceptional beauty for himself. He lays siege on the '
+                  'impregnable fortress of Chittorgarh.<br/><br/>After a '
+                  'gruelling 6 months, he returns empty handed. He becomes '
+                  'obsessed and now wants to capture Chittor and its Queen at '
+                  'any cost. He returns with a bigger army and raging fury. He '
+                  'attacks Chittor with brutal force and a bloody and fearsome '
+                  'battle takes place between the righteous Maharawal Ratan '
+                  'Singh defending his kingdom and the honour of his Queen and '
+                  'Sultan Allaudin Khilji. Khilji manages to breach the '
+                  'fortress but it goes in vain as the Queen chooses to make '
+                  'the ultimate sacrifice to protect her dignity.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=8YaF2m7hCx0&app=desktop',
+ 'movieType': 'MT'}
+2018-01-23 00:58:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Plays': ['Comedy', 'Drama', 'Satire']},
+ 'movieDimension': '2D',
+ 'movieDuration': '144',
+ 'movieId': 'ET00056918',
+ 'movieLanguage': 'Kannada',
+ 'movieName': 'Humble Politician Nograj',
+ 'movieStartDate': '2018-01-12',
+ 'movieSynopsis': 'The film is a socio-political satire based on the popular '
+                  'character of Politician Nograj created by and starring '
+                  'Social Media Star, RJ and RCB Insider - Danish Sait. It has '
+                  'been directed by filmmaker Saad Khan who gave Bangalore its '
+                  'first Hindi language feature film - Station.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=SVVX5PnhKBA&t=5s',
+ 'movieType': 'MT'}
+2018-01-23 00:58:59 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069426-MT/20180124
+2018-01-23 00:58:59 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069426-MT/20180124
+2018-01-23 00:58:59 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069426-MT/20180124
+2018-01-23 00:58:59 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00069426
+2018-01-23 00:58:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Period ': [], 'Plays': ['Drama']},
+ 'movieDimension': 'IMAX 3D',
+ 'movieDuration': '163',
+ 'movieId': 'ET00069513',
+ 'movieLanguage': 'Hindi',
+ 'movieName': 'Padmaavat (IMAX 3D)',
+ 'movieStartDate': '2018-01-25',
+ 'movieSynopsis': 'Set in 1303 AD medieval India, Padmaavat is the story of '
+                  'honour, valour and obsession. Queen Padmavati is known for '
+                  'her exceptional beauty along with a strong sense of justice '
+                  'and is the wife of Maharawal Ratan Singh and pride of the '
+                  'Kingdom of Chittor, a prosperous kingdom in the north west '
+                  'of India.<br/><br/>The legend of her beauty reaches the '
+                  'reigning sultan of Hindustan-Allaudin Khilji. The sultan '
+                  'who is a tyrant, is fixated with wanting anything that is '
+                  'of exceptional beauty for himself. He lays siege on the '
+                  'impregnable fortress of Chittorgarh.<br/><br/>After a '
+                  'gruelling 6 months, he returns empty handed. He becomes '
+                  'obsessed and now wants to capture Chittor and its Queen at '
+                  'any cost. He returns with a bigger army and raging fury. He '
+                  'attacks Chittor with brutal force and a bloody and fearsome '
+                  'battle takes place between the righteous Maharawal Ratan '
+                  'Singh defending his kingdom and the honour of his Queen and '
+                  'Sultan Allaudin Khilji. Khilji manages to breach the '
+                  'fortress but it goes in vain as the Queen chooses to make '
+                  'the ultimate sacrifice to protect her dignity.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=8YaF2m7hCx0&app=desktop',
+ 'movieType': 'MT'}
+2018-01-23 00:58:59 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00056918-MT/20180124
+2018-01-23 00:58:59 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00056918-MT/20180124
+2018-01-23 00:58:59 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00056918-MT/20180124
+2018-01-23 00:58:59 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00056918
+2018-01-23 00:58:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'UA',
+ 'duration': '145',
+ 'genre': '|COMEDY|ROMANCE CO|',
+ 'groupId': 'EG00040003',
+ 'groupName': 'Chamak'}
+2018-01-23 00:58:59 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069513-MT/20180124
+2018-01-23 00:58:59 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069513-MT/20180124
+2018-01-23 00:58:59 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069513-MT/20180124
+2018-01-23 00:58:59 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00069513
+2018-01-23 00:58:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'censor': 'UA',
+ 'duration': '161',
+ 'genre': '|ACTION|THRILLER|',
+ 'groupId': 'EG00028338',
+ 'groupName': 'Tiger Zinda Hai'}
+2018-01-23 00:59:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Plays': ['Comedy', 'Romance']},
+ 'movieDimension': '2D',
+ 'movieDuration': '145',
+ 'movieId': 'ET00059286',
+ 'movieLanguage': 'Kannada',
+ 'movieName': 'Chamak',
+ 'movieStartDate': '2017-12-29',
+ 'movieSynopsis': 'Chamak is a Kannada movie starring Golden Star Ganesh and '
+                  'Rashmika Mandanna in prominent roles. The movie also stars '
+                  'Sadhu Kokila. It is a romantic comedy directed by Suni with '
+                  'Arjun Janya as the musician, forming part of the crew. '
+                  '<br/><br/>If you are a representative of the production '
+                  'house, please share the synopsis of the film with '
+                  '<br/>synopsis@bookmyshow.com',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=LSv1_xOhpaY&feature=youtu.be',
+ 'movieType': 'MT'}
+2018-01-23 00:59:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Plays': ['Action', 'Thriller']},
+ 'movieDimension': '2D',
+ 'movieDuration': '161',
+ 'movieId': 'ET00046433',
+ 'movieLanguage': 'Hindi',
+ 'movieName': 'Tiger Zinda Hai',
+ 'movieStartDate': '2017-12-22',
+ 'movieSynopsis': 'The sequel to the blockbuster Ek Tha Tiger, Tiger Zinda Hai '
+                  'carries forward the story of two spies, Tiger (played by '
+                  'Salman Khan) and Zoya (played by Katrina Kaif), eight years '
+                  'after their previous mission.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=ePO5M5DE01I',
+ 'movieType': 'MT'}
+2018-01-23 00:59:00 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00059286-MT/20180124
+2018-01-23 00:59:00 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00059286-MT/20180124
+2018-01-23 00:59:00 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00059286-MT/20180124
+2018-01-23 00:59:00 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00059286
+2018-01-23 00:59:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'UA',
+ 'duration': '138',
+ 'genre': '|ACTION|COMEDY|DRAMA|',
+ 'groupId': 'EG00039237',
+ 'groupName': 'Thaanaa Serndha Koottam'}
+2018-01-23 00:59:00 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00046433-MT/20180124
+2018-01-23 00:59:00 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00046433-MT/20180124
+2018-01-23 00:59:00 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00046433-MT/20180124
+2018-01-23 00:59:00 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00046433
+2018-01-23 00:59:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'censor': 'UA',
+ 'duration': '155',
+ 'genre': '|DRAMA|SPORTS|',
+ 'groupId': 'EG00040157',
+ 'groupName': 'Mukkabaaz'}
+2018-01-23 00:59:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Plays': ['Action', 'Comedy', 'Drama']},
+ 'movieDimension': '2D',
+ 'movieDuration': '138',
+ 'movieId': 'ET00058397',
+ 'movieLanguage': 'Tamil',
+ 'movieName': 'Thaanaa Serndha Koottam',
+ 'movieStartDate': '2018-01-12',
+ 'movieSynopsis': 'Thaanaa Serndha Koottam is a Tamil movie starring Suriya '
+                  'and Keerthy Suresh in prominent roles. The cast also '
+                  'includes Nandha, Senthil, RJ Balaji and Ramya Krishnan. It '
+                  'is an action-thriller movie written and directed by Vignesh '
+                  'Shivan.<br/><br/>If you are a representative of the '
+                  'production house, please share the details of the film with '
+                  '<br/><a href="synopsis@bookmyshow.com '
+                  '">synopsis@bookmyshow.com </a>',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=hYM_iZII4U4',
+ 'movieType': 'MT'}
+2018-01-23 00:59:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Plays': ['Drama'], 'Sports ': []},
+ 'movieDimension': '2D',
+ 'movieDuration': '155',
+ 'movieId': 'ET00059419',
+ 'movieLanguage': 'Hindi',
+ 'movieName': 'Mukkabaaz',
+ 'movieStartDate': '2018-01-12',
+ 'movieSynopsis': 'Shravan Singh, a gifted boxer, has got what it takes to be '
+                  'the best. However, before taking on opponents in the boxing '
+                  'ring, he must tackle a horde of indifferent sports '
+                  'officials, an abusive and all-powerful coach and a society '
+                  'that sneers at his humble upbringing. Things take a turn '
+                  'for the worse when Shravan falls in love with Sunaina, an '
+                  'upper caste girl who also happens to be the niece of his '
+                  'ruthless coach. With the odds stacked against him, can '
+                  'Shravan spar his way out of adversity? Inspired by real '
+                  'life incidents, Mukkabaz is at once a sports drama, a love '
+                  'story and a biting social commentary.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=fl3gun0J8XM',
+ 'movieType': 'MT'}
+2018-01-23 00:59:01 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00058397-MT/20180124
+2018-01-23 00:59:01 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00058397-MT/20180124
+2018-01-23 00:59:01 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00058397-MT/20180124
+2018-01-23 00:59:01 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00058397
+2018-01-23 00:59:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'UA',
+ 'duration': '165',
+ 'genre': '|ACTION|DRAMA|',
+ 'groupId': 'EG00044484',
+ 'groupName': 'Jai Simha'}
+2018-01-23 00:59:01 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00059419-MT/20180124
+2018-01-23 00:59:01 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00059419-MT/20180124
+2018-01-23 00:59:01 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00059419-MT/20180124
+2018-01-23 00:59:01 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00059419
+2018-01-23 00:59:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'censor': 'A',
+ 'duration': '144',
+ 'genre': '|HORROR|THRILLER|',
+ 'groupId': 'EG00041582',
+ 'groupName': '1921'}
+2018-01-23 00:59:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Plays': ['Action', 'Drama']},
+ 'movieDimension': '2D',
+ 'movieDuration': '165',
+ 'movieId': 'ET00064225',
+ 'movieLanguage': 'Telugu',
+ 'movieName': 'Jai Simha',
+ 'movieStartDate': '2018-01-12',
+ 'movieSynopsis': 'Jai Simha is a Telugu movie starring Nandamuri Balakrishna '
+                  'in a prominent role. The cast also includes Nayanthara and '
+                  'Natasha Doshi. It is a drama directed by KS '
+                  'Ravikumar.<br/><br/>If you are a representative of the '
+                  'production house, please share the details of the film with '
+                  'synopsis@bookmyshow.com',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=nc0kM0f4OIU',
+ 'movieType': 'MT'}
+2018-01-23 00:59:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Horror': [], 'Plays': ['Thriller']},
+ 'movieDimension': '2D',
+ 'movieDuration': '144',
+ 'movieId': 'ET00060939',
+ 'movieLanguage': 'Hindi',
+ 'movieName': '1921',
+ 'movieStartDate': '2018-01-12',
+ 'movieSynopsis': '1921 is a Hindi movie starring Zareen Khan and Karan Kundra '
+                  'in prominent roles. It is a horror drama directed by Vikram '
+                  'Bhatt, forming part of the crew.<br/><br/>If you are a '
+                  'representative of the production house, please share the '
+                  'details of the film with synopsis@bookmyshow.com',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=kXKw2skbLdk&feature=youtu.be',
+ 'movieType': 'MT'}
+2018-01-23 00:59:02 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00064225-MT/20180124
+2018-01-23 00:59:02 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00064225-MT/20180124
+2018-01-23 00:59:02 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00064225-MT/20180124
+2018-01-23 00:59:02 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00064225
+2018-01-23 00:59:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'U',
+ 'duration': '146',
+ 'genre': '|ADVN|THRILLER|',
+ 'groupId': 'EG00048274',
+ 'groupName': 'Carbon'}
+2018-01-23 00:59:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://in.bookmyshow.com/buytickets/padmaavat-3d-bengaluru/movie-bang-ET00046516-MT/20180124> from <GET https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00046516-MT/20180124>
+2018-01-23 00:59:02 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00060939-MT/20180124
+2018-01-23 00:59:02 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00060939-MT/20180124
+2018-01-23 00:59:02 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00060939-MT/20180124
+2018-01-23 00:59:02 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00060939
+2018-01-23 00:59:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'censor': 'UA',
+ 'duration': '119',
+ 'genre': '|ADVN|FAMILY|FANTASY|',
+ 'groupId': 'EG00023738',
+ 'groupName': 'Jumanji: Welcome To The Jungle'}
+2018-01-23 00:59:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Plays': ['Adventure', 'Thriller']},
+ 'movieDimension': '2D',
+ 'movieDuration': '146',
+ 'movieId': 'ET00068229',
+ 'movieLanguage': 'Malayalam',
+ 'movieName': 'Carbon',
+ 'movieStartDate': '2018-01-19',
+ 'movieSynopsis': 'Carbon is a Malayalam movie starring Fahadh Faasil and '
+                  'Mamta Mohandas. It is an adventure thriller directed by '
+                  'Venu Isc with Vishal Bhardwaj as musician, forming part of '
+                  'the crew.<br/><br/>If you are a representative of the '
+                  'production house, please share the details of the film with '
+                  '<br/>synopsis@bookmyshow.com',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=UISTDTV-PI4',
+ 'movieType': 'MT'}
+2018-01-23 00:59:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Fantasy': [],
+               'New Year Parties': ['Family'],
+               'Plays': ['Adventure']},
+ 'movieDimension': '3D',
+ 'movieDuration': '119',
+ 'movieId': 'ET00067941',
+ 'movieLanguage': 'Hindi',
+ 'movieName': 'Jumanji: Welcome To The Jungle (3D Hindi)',
+ 'movieStartDate': '2017-12-29',
+ 'movieSynopsis': 'In a brand new Jumanji adventure, the tables are turned as '
+                  "four teenagers are sucked into Jumanji's world - pitted "
+                  'against rhinos, black mambas and an endless variety of '
+                  "jungle traps and puzzles. To survive, they'll play as "
+                  'characters from the game: meek Spencer becomes a '
+                  'braveexplorer; hulky jock Fridge becomes a tiny genius; '
+                  'It-girl Bethany becomes a bookworm professor; and '
+                  'unathletic Martha becomes an amazonian warrior. To beat the '
+                  "game and return to the real world with their lives, they'll "
+                  'have to start seeing things in an entirely different way.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=ubn4zeM40tk',
+ 'movieType': 'MT'}
+2018-01-23 00:59:03 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00068229-MT/20180124
+2018-01-23 00:59:03 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00068229-MT/20180124
+2018-01-23 00:59:03 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00068229-MT/20180124
+2018-01-23 00:59:03 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00068229
+2018-01-23 00:59:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'UA',
+ 'duration': '155',
+ 'genre': '|DRAMA|SPORTS|',
+ 'groupId': 'EG00040157',
+ 'groupName': 'Mukkabaaz'}
+2018-01-23 00:59:03 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067941-MT/20180124
+2018-01-23 00:59:03 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067941-MT/20180124
+2018-01-23 00:59:03 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067941-MT/20180124
+2018-01-23 00:59:03 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00067941
+2018-01-23 00:59:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Fantasy': [],
+               'New Year Parties': ['Family'],
+               'Plays': ['Adventure']},
+ 'movieDimension': '3D',
+ 'movieDuration': '119',
+ 'movieId': 'ET00067940',
+ 'movieLanguage': 'English',
+ 'movieName': 'Jumanji: Welcome To The Jungle (3D)',
+ 'movieStartDate': '2017-12-29',
+ 'movieSynopsis': 'In a brand new Jumanji adventure, the tables are turned as '
+                  "four teenagers are sucked into Jumanji's world - pitted "
+                  'against rhinos, black mambas and an endless variety of '
+                  "jungle traps and puzzles. To survive, they'll play as "
+                  'characters from the game: meek Spencer becomes a '
+                  'braveexplorer; hulky jock Fridge becomes a tiny genius; '
+                  'It-girl Bethany becomes a bookworm professor; and '
+                  'unathletic Martha becomes an amazonian warrior. To beat the '
+                  "game and return to the real world with their lives, they'll "
+                  'have to start seeing things in an entirely different way.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=ubn4zeM40tk',
+ 'movieType': 'MT'}
+2018-01-23 00:59:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Plays': ['Drama'], 'Sports ': []},
+ 'movieDimension': '2D',
+ 'movieDuration': '155',
+ 'movieId': 'ET00059419',
+ 'movieLanguage': 'Hindi',
+ 'movieName': 'Mukkabaaz',
+ 'movieStartDate': '2018-01-12',
+ 'movieSynopsis': 'Shravan Singh, a gifted boxer, has got what it takes to be '
+                  'the best. However, before taking on opponents in the boxing '
+                  'ring, he must tackle a horde of indifferent sports '
+                  'officials, an abusive and all-powerful coach and a society '
+                  'that sneers at his humble upbringing. Things take a turn '
+                  'for the worse when Shravan falls in love with Sunaina, an '
+                  'upper caste girl who also happens to be the niece of his '
+                  'ruthless coach. With the odds stacked against him, can '
+                  'Shravan spar his way out of adversity? Inspired by real '
+                  'life incidents, Mukkabaz is at once a sports drama, a love '
+                  'story and a biting social commentary.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=fl3gun0J8XM',
+ 'movieType': 'MT'}
+2018-01-23 00:59:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://in.bookmyshow.com/bengaluru/movies/padmaavat-imax-3d/ET00069513> from <GET https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00069513>
+2018-01-23 00:59:04 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067940-MT/20180124
+2018-01-23 00:59:04 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067940-MT/20180124
+2018-01-23 00:59:04 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067940-MT/20180124
+2018-01-23 00:59:04 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00067940
+2018-01-23 00:59:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Fantasy': [],
+               'New Year Parties': ['Family'],
+               'Plays': ['Adventure']},
+ 'movieDimension': '4DX 3D',
+ 'movieDuration': '119',
+ 'movieId': 'ET00068316',
+ 'movieLanguage': 'English',
+ 'movieName': 'Jumanji: Welcome To The Jungle (3D) (4DX)',
+ 'movieStartDate': '2017-12-29',
+ 'movieSynopsis': 'In a brand new Jumanji adventure, the tables are turned as '
+                  "four teenagers are sucked into Jumanji's world - pitted "
+                  'against rhinos, black mambas and an endless variety of '
+                  "jungle traps and puzzles. To survive, they'll play as "
+                  'characters from the game: meek Spencer becomes a '
+                  'braveexplorer; hulky jock Fridge becomes a tiny genius; '
+                  'It-girl Bethany becomes a bookworm professor; and '
+                  'unathletic Martha becomes an amazonian warrior. To beat the '
+                  "game and return to the real world with their lives, they'll "
+                  'have to start seeing things in an entirely different way.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=ubn4zeM40tk',
+ 'movieType': 'MT'}
+2018-01-23 00:59:04 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00059419-MT/20180124
+2018-01-23 00:59:04 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00059419-MT/20180124
+2018-01-23 00:59:04 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00059419-MT/20180124
+2018-01-23 00:59:04 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00059419
+2018-01-23 00:59:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'UA',
+ 'duration': '115',
+ 'genre': '|BIOPIC|DRAMA|HISTORY|',
+ 'groupId': 'EG00045048',
+ 'groupName': 'The Post'}
+2018-01-23 00:59:04 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00068316-MT/20180124
+2018-01-23 00:59:04 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00068316-MT/20180124
+2018-01-23 00:59:04 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00068316-MT/20180124
+2018-01-23 00:59:04 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00068316
+2018-01-23 00:59:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Fantasy': [],
+               'New Year Parties': ['Family'],
+               'Plays': ['Adventure']},
+ 'movieDimension': '2D',
+ 'movieDuration': '0',
+ 'movieId': 'ET00067406',
+ 'movieLanguage': 'Hindi',
+ 'movieName': 'Jumanji: Welcome To The Jungle (Hindi)',
+ 'movieStartDate': '2017-12-29',
+ 'movieSynopsis': 'In a brand new Jumanji adventure, the tables are turned as '
+                  "four teenagers are sucked into Jumanji's world - pitted "
+                  'against rhinos, black mambas and an endless variety of '
+                  "jungle traps and puzzles. To survive, they'll play as "
+                  'characters from the game: meek Spencer becomes a '
+                  'braveexplorer; hulky jock Fridge becomes a tiny genius; '
+                  'It-girl Bethany becomes a bookworm professor; and '
+                  'unathletic Martha becomes an amazonian warrior. To beat the '
+                  "game and return to the real world with their lives, they'll "
+                  'have to start seeing things in an entirely different way.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=Hled-wtSchc',
+ 'movieType': 'MT'}
+2018-01-23 00:59:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Biography': [], 'History': [], 'Plays': ['Drama']},
+ 'movieDimension': '2D',
+ 'movieDuration': '115',
+ 'movieId': 'ET00064848',
+ 'movieLanguage': 'English',
+ 'movieName': 'The Post',
+ 'movieStartDate': '2018-01-12',
+ 'movieSynopsis': 'In the early 1970s, U.S. strategic analyst and anti-war '
+                  'activist Daniel Ellsberg leaks classified documents '
+                  "pertaining to the real nature and extent of America's "
+                  'involvement in the Vietnam War to several leading '
+                  'newspapers. The publication of these documents, known as '
+                  'The Pentagon Papers, creates a furore and triggers an '
+                  'unprecedented battle between journalists and the '
+                  'government. At the forefront of this crusade against '
+                  "political hypocrisy are The Washington Post's first female "
+                  'publisher Kay Graham and its firebrand editor Ben Bradlee, '
+                  'and they must risk their careers and personal freedom to '
+                  'bring the truth to light and uphold the spirit of fearless '
+                  'journalism.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=nrXlY6gzTTM',
+ 'movieType': 'MT'}
+2018-01-23 00:59:05 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067406-MT/20180124
+2018-01-23 00:59:05 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067406-MT/20180124
+2018-01-23 00:59:05 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067406-MT/20180124
+2018-01-23 00:59:05 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00067406
+2018-01-23 00:59:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'censor': 'UA',
+ 'duration': '115',
+ 'genre': '|BIOPIC|DRAMA|HISTORY|',
+ 'groupId': 'EG00045048',
+ 'groupName': 'The Post'}
+2018-01-23 00:59:05 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00064848-MT/20180124
+2018-01-23 00:59:05 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00064848-MT/20180124
+2018-01-23 00:59:05 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00064848-MT/20180124
+2018-01-23 00:59:05 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00064848
+2018-01-23 00:59:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'UA',
+ 'duration': '119',
+ 'genre': '|ADVN|FAMILY|FANTASY|',
+ 'groupId': 'EG00023738',
+ 'groupName': 'Jumanji: Welcome To The Jungle'}
+2018-01-23 00:59:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Biography': [], 'History': [], 'Plays': ['Drama']},
+ 'movieDimension': '2D',
+ 'movieDuration': '115',
+ 'movieId': 'ET00064848',
+ 'movieLanguage': 'English',
+ 'movieName': 'The Post',
+ 'movieStartDate': '2018-01-12',
+ 'movieSynopsis': 'In the early 1970s, U.S. strategic analyst and anti-war '
+                  'activist Daniel Ellsberg leaks classified documents '
+                  "pertaining to the real nature and extent of America's "
+                  'involvement in the Vietnam War to several leading '
+                  'newspapers. The publication of these documents, known as '
+                  'The Pentagon Papers, creates a furore and triggers an '
+                  'unprecedented battle between journalists and the '
+                  'government. At the forefront of this crusade against '
+                  "political hypocrisy are The Washington Post's first female "
+                  'publisher Kay Graham and its firebrand editor Ben Bradlee, '
+                  'and they must risk their careers and personal freedom to '
+                  'bring the truth to light and uphold the spirit of fearless '
+                  'journalism.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=nrXlY6gzTTM',
+ 'movieType': 'MT'}
+2018-01-23 00:59:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Fantasy': [],
+               'New Year Parties': ['Family'],
+               'Plays': ['Adventure']},
+ 'movieDimension': '3D',
+ 'movieDuration': '119',
+ 'movieId': 'ET00067940',
+ 'movieLanguage': 'English',
+ 'movieName': 'Jumanji: Welcome To The Jungle (3D)',
+ 'movieStartDate': '2017-12-29',
+ 'movieSynopsis': 'In a brand new Jumanji adventure, the tables are turned as '
+                  "four teenagers are sucked into Jumanji's world - pitted "
+                  'against rhinos, black mambas and an endless variety of '
+                  "jungle traps and puzzles. To survive, they'll play as "
+                  'characters from the game: meek Spencer becomes a '
+                  'braveexplorer; hulky jock Fridge becomes a tiny genius; '
+                  'It-girl Bethany becomes a bookworm professor; and '
+                  'unathletic Martha becomes an amazonian warrior. To beat the '
+                  "game and return to the real world with their lives, they'll "
+                  'have to start seeing things in an entirely different way.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=ubn4zeM40tk',
+ 'movieType': 'MT'}
+2018-01-23 00:59:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://in.bookmyshow.com/buytickets/padmaavat-3d-bengaluru/movie-bang-ET00069513-MT/20180124> from <GET https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069513-MT/20180124>
+2018-01-23 00:59:06 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00064848-MT/20180124
+2018-01-23 00:59:06 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00064848-MT/20180124
+2018-01-23 00:59:06 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00064848-MT/20180124
+2018-01-23 00:59:06 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00064848
+2018-01-23 00:59:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'censor': 'UA',
+ 'duration': '118',
+ 'genre': '|DRAMA|MYSTERY|THRILLER|',
+ 'groupId': 'EG00039671',
+ 'groupName': 'Vodka Diaries'}
+2018-01-23 00:59:06 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067940-MT/20180124
+2018-01-23 00:59:06 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067940-MT/20180124
+2018-01-23 00:59:06 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067940-MT/20180124
+2018-01-23 00:59:06 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00067940
+2018-01-23 00:59:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Fantasy': [],
+               'New Year Parties': ['Family'],
+               'Plays': ['Adventure']},
+ 'movieDimension': '4DX 3D',
+ 'movieDuration': '119',
+ 'movieId': 'ET00068316',
+ 'movieLanguage': 'English',
+ 'movieName': 'Jumanji: Welcome To The Jungle (3D) (4DX)',
+ 'movieStartDate': '2017-12-29',
+ 'movieSynopsis': 'In a brand new Jumanji adventure, the tables are turned as '
+                  "four teenagers are sucked into Jumanji's world - pitted "
+                  'against rhinos, black mambas and an endless variety of '
+                  "jungle traps and puzzles. To survive, they'll play as "
+                  'characters from the game: meek Spencer becomes a '
+                  'braveexplorer; hulky jock Fridge becomes a tiny genius; '
+                  'It-girl Bethany becomes a bookworm professor; and '
+                  'unathletic Martha becomes an amazonian warrior. To beat the '
+                  "game and return to the real world with their lives, they'll "
+                  'have to start seeing things in an entirely different way.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=ubn4zeM40tk',
+ 'movieType': 'MT'}
+2018-01-23 00:59:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Mystery': [], 'Plays': ['Drama', 'Thriller']},
+ 'movieDimension': '2D',
+ 'movieDuration': '118',
+ 'movieId': 'ET00058863',
+ 'movieLanguage': 'Hindi',
+ 'movieName': 'Vodka Diaries',
+ 'movieStartDate': '2018-01-19',
+ 'movieSynopsis': 'In the misty town of Manali, ACP Ashwini Dixit attempts to '
+                  'solve a series of mysterious murders happening in a single '
+                  'night, which might be connected to the night club, Vodka '
+                  'Diaries.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=DHxnbfh1_8M',
+ 'movieType': 'MT'}
+2018-01-23 00:59:06 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00068316-MT/20180124
+2018-01-23 00:59:06 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00068316-MT/20180124
+2018-01-23 00:59:06 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00068316-MT/20180124
+2018-01-23 00:59:06 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00068316
+2018-01-23 00:59:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Fantasy': [],
+               'New Year Parties': ['Family'],
+               'Plays': ['Adventure']},
+ 'movieDimension': 'IMAX 3D',
+ 'movieDuration': '119',
+ 'movieId': 'ET00068327',
+ 'movieLanguage': 'English',
+ 'movieName': 'Jumanji: Welcome To The Jungle (IMAX 3D)',
+ 'movieStartDate': '2017-12-29',
+ 'movieSynopsis': 'In a brand new Jumanji adventure, the tables are turned as '
+                  "four teenagers are sucked into Jumanji's world - pitted "
+                  'against rhinos, black mambas and an endless variety of '
+                  "jungle traps and puzzles. To survive, they'll play as "
+                  'characters from the game: meek Spencer becomes a '
+                  'braveexplorer; hulky jock Fridge becomes a tiny genius; '
+                  'It-girl Bethany becomes a bookworm professor; and '
+                  'unathletic Martha becomes an amazonian warrior. To beat the '
+                  "game and return to the real world with their lives, they'll "
+                  'have to start seeing things in an entirely different way.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=ubn4zeM40tk',
+ 'movieType': 'MT'}
+2018-01-23 00:59:07 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00058863-MT/20180124
+2018-01-23 00:59:07 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00058863-MT/20180124
+2018-01-23 00:59:07 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00058863-MT/20180124
+2018-01-23 00:59:07 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00058863
+2018-01-23 00:59:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'censor': 'UA',
+ 'duration': '128',
+ 'genre': '|BIOPIC|DRAMA|WAR|',
+ 'groupId': 'EG00043179',
+ 'groupName': 'Darkest Hour'}
+2018-01-23 00:59:07 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00068327-MT/20180124
+2018-01-23 00:59:07 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00068327-MT/20180124
+2018-01-23 00:59:07 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00068327-MT/20180124
+2018-01-23 00:59:07 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00068327
+2018-01-23 00:59:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'UA',
+ 'duration': '138',
+ 'genre': '|ACTION|COMEDY|DRAMA|',
+ 'groupId': 'EG00048817',
+ 'groupName': 'Gang'}
+2018-01-23 00:59:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Biography': [], 'Plays': ['Drama'], 'War': []},
+ 'movieDimension': '2D',
+ 'movieDuration': '128',
+ 'movieId': 'ET00062636',
+ 'movieLanguage': 'English',
+ 'movieName': 'Darkest Hour',
+ 'movieStartDate': '2018-01-19',
+ 'movieSynopsis': 'In the early days of the World War II, as the threat of '
+                  'invasion by the rampaging German Nazi forces led by Hitler '
+                  'is imminent, the fate of Western Europe hangs in the hands '
+                  'of the newly-appointed British Prime Minister, Winston '
+                  'Churchill. He must decide whether to negotiate terms with '
+                  'the German dictator or fight against all odds. Whatever he '
+                  'decides will change the course of world history.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=LtJ60u7SUSw',
+ 'movieType': 'MT'}
+2018-01-23 00:59:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Plays': ['Action', 'Comedy', 'Drama']},
+ 'movieDimension': '2D',
+ 'movieDuration': '138',
+ 'movieId': 'ET00068766',
+ 'movieLanguage': 'Telugu',
+ 'movieName': 'Gang (Telugu)',
+ 'movieStartDate': '2018-01-12',
+ 'movieSynopsis': 'Coming Soon!<br/><br/>If you are a representative of the '
+                  'production house, please share the details of the film with '
+                  'synopsis@bookmyshow.com',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=vWD6kUP9RTY',
+ 'movieType': 'MT'}
+2018-01-23 00:59:07 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00062636-MT/20180124
+2018-01-23 00:59:07 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00062636-MT/20180124
+2018-01-23 00:59:07 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00062636-MT/20180124
+2018-01-23 00:59:07 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00062636
+2018-01-23 00:59:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'censor': 'A',
+ 'duration': '112',
+ 'genre': '|SAT|THRILLER|',
+ 'groupId': 'EG00035716',
+ 'groupName': 'Kaalakaandi'}
+2018-01-23 00:59:08 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00068766-MT/20180124
+2018-01-23 00:59:08 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00068766-MT/20180124
+2018-01-23 00:59:08 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00068766-MT/20180124
+2018-01-23 00:59:08 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00068766
+2018-01-23 00:59:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'UA',
+ 'duration': '158',
+ 'genre': '|ACTION|ROMANCE CO|THRILLER|',
+ 'groupId': 'EG00042238',
+ 'groupName': 'Agnyaathavaasi'}
+2018-01-23 00:59:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://in.bookmyshow.com/bengaluru/movies/padmaavat-2d-hindi/ET00069426> from <GET https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00069426>
+2018-01-23 00:59:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Plays': ['Satire', 'Thriller']},
+ 'movieDimension': '2D',
+ 'movieDuration': '112',
+ 'movieId': 'ET00054569',
+ 'movieLanguage': 'Hindi',
+ 'movieName': 'Kaalakaandi',
+ 'movieStartDate': '2018-01-12',
+ 'movieSynopsis': 'This is a story where fates intertwine, destinies bump into '
+                  'each other, chaotic ironies result and in the end - order '
+                  'is restored by a beautiful stroke of poetic '
+                  'justice.<br/>The story plays out in 12 hours, with six '
+                  'characters from different worlds, from urban, ambitious '
+                  'upwardly mobile Bombay and its dark, neglected '
+                  'under-belly.<br/>In this dark, funny tale, the lives of '
+                  'complete strangers intersect for a few frantic moments and '
+                  'lead to consequences not improbable but extraordinary.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=RsfUZe606LQ&feature=youtu.be',
+ 'movieType': 'MT'}
+2018-01-23 00:59:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Plays': ['Action', 'Romance', 'Thriller']},
+ 'movieDimension': '2D',
+ 'movieDuration': '158',
+ 'movieId': 'ET00061620',
+ 'movieLanguage': 'Telugu',
+ 'movieName': 'Agnyaathavaasi',
+ 'movieStartDate': '2018-01-10',
+ 'movieSynopsis': 'Agnyaathavaasi is a Telugu movie starring Pawan Kalyan and '
+                  'Keerthy Suresh in prominent roles. The cast also includes '
+                  'Anu Emmanuel and Aadhi . It is an action romance thriller '
+                  'directed by Trivikram Srinivas with Anirudh Ravichander as '
+                  'musician, forming part of the crew.<br/><br/>If you are a '
+                  'representative of the production house, please share the '
+                  'details of the film with <br/>synopsis@bookmyshow.com',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=97h9fBWltBM',
+ 'movieType': 'MT'}
+2018-01-23 00:59:08 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00054569-MT/20180124
+2018-01-23 00:59:08 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00054569-MT/20180124
+2018-01-23 00:59:08 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00054569-MT/20180124
+2018-01-23 00:59:08 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00054569
+2018-01-23 00:59:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'censor': 'UA',
+ 'duration': '105',
+ 'genre': '|ACTION|THRILLER|',
+ 'groupId': 'EG00042777',
+ 'groupName': 'The Commuter'}
+2018-01-23 00:59:08 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00061620-MT/20180124
+2018-01-23 00:59:08 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00061620-MT/20180124
+2018-01-23 00:59:08 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00061620-MT/20180124
+2018-01-23 00:59:08 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00061620
+2018-01-23 00:59:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'U',
+ 'duration': '160',
+ 'genre': '|COMEDY|DRAMA|',
+ 'groupId': 'EG00044224',
+ 'groupName': 'Aadu 2'}
+2018-01-23 00:59:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Plays': ['Action', 'Thriller']},
+ 'movieDimension': '2D',
+ 'movieDuration': '105',
+ 'movieId': 'ET00062201',
+ 'movieLanguage': 'English',
+ 'movieName': 'The Commuter',
+ 'movieStartDate': '2018-01-19',
+ 'movieSynopsis': 'Michael, an insurance salesman, during his daily commute to '
+                  'home, meets a mysterious stranger who asks him to join her '
+                  'in her mission to uncover the identity of a hidden '
+                  'passenger on the train before the last stop. As the two '
+                  'work together, Michael soon finds himself in the midst of a '
+                  'notorious criminal conspiracy.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=QIKS7NHQPbQ',
+ 'movieType': 'MT'}
+2018-01-23 00:59:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Plays': ['Comedy', 'Drama']},
+ 'movieDimension': '2D',
+ 'movieDuration': '160',
+ 'movieId': 'ET00063940',
+ 'movieLanguage': 'Malayalam',
+ 'movieName': 'Aadu 2',
+ 'movieStartDate': '2017-12-22',
+ 'movieSynopsis': 'Aadu 2 is a Malayalam movie starring Jayasurya, Vijay Babu '
+                  'and Saiju Kurup in prominent roles. It is a comedy drama '
+                  'directed by Midhun Manuel Thomas, with Vijay Babu as the '
+                  'producer, forming part of the crew.<br/><br/>If you are a '
+                  'representative of the production house, please share the '
+                  'details of the film with synopsis@bookmyshow.com',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=_jlVhEs75Fo',
+ 'movieType': 'MT'}
+2018-01-23 00:59:09 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00062201-MT/20180124
+2018-01-23 00:59:09 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00062201-MT/20180124
+2018-01-23 00:59:09 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00062201-MT/20180124
+2018-01-23 00:59:09 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00062201
+2018-01-23 00:59:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Plays': ['Action', 'Thriller']},
+ 'movieDimension': '4DX',
+ 'movieDuration': '105',
+ 'movieId': 'ET00069400',
+ 'movieLanguage': 'English',
+ 'movieName': 'The Commuter (2D) (4DX)',
+ 'movieStartDate': '2018-01-19',
+ 'movieSynopsis': 'Michael, an insurance salesman, during his daily commute to '
+                  'home, meets a mysterious stranger who asks him to join her '
+                  'in her mission to uncover the identity of a hidden '
+                  'passenger on the train before the last stop. As the two '
+                  'work together, Michael soon finds himself in the midst of a '
+                  'notorious criminal conspiracy.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=QIKS7NHQPbQ',
+ 'movieType': 'MT'}
+2018-01-23 00:59:09 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00063940-MT/20180124
+2018-01-23 00:59:09 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00063940-MT/20180124
+2018-01-23 00:59:09 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00063940-MT/20180124
+2018-01-23 00:59:09 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00063940
+2018-01-23 00:59:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'UA',
+ 'duration': '138',
+ 'genre': '|ACTION|THRILLER|',
+ 'groupId': 'EG00036851',
+ 'groupName': 'Sketch'}
+2018-01-23 00:59:10 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069400-MT/20180124
+2018-01-23 00:59:10 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069400-MT/20180124
+2018-01-23 00:59:10 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069400-MT/20180124
+2018-01-23 00:59:10 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00069400
+2018-01-23 00:59:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Plays': ['Action', 'Thriller']},
+ 'movieDimension': 'IMAX 2D',
+ 'movieDuration': '105',
+ 'movieId': 'ET00069342',
+ 'movieLanguage': 'English',
+ 'movieName': 'The Commuter (IMAX 2D)',
+ 'movieStartDate': '2018-01-19',
+ 'movieSynopsis': 'Michael, an insurance salesman, during his daily commute to '
+                  'home, meets a mysterious stranger who asks him to join her '
+                  'in her mission to uncover the identity of a hidden '
+                  'passenger on the train before the last stop. As the two '
+                  'work together, Michael soon finds himself in the midst of a '
+                  'notorious criminal conspiracy.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=QIKS7NHQPbQ',
+ 'movieType': 'MT'}
+2018-01-23 00:59:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Plays': ['Action', 'Thriller']},
+ 'movieDimension': '2D',
+ 'movieDuration': '138',
+ 'movieId': 'ET00055868',
+ 'movieLanguage': 'Tamil',
+ 'movieName': 'Sketch',
+ 'movieStartDate': '2018-01-12',
+ 'movieSynopsis': 'Sketch is a Tamil movie starring Vikram and Tamannaah '
+                  'Bhatia in prominent roles. It is a action thriller directed '
+                  'by Vijay Chander with S. Thaman as musician, forming part '
+                  'of the crew.<br/><br/>If you are a representative of the '
+                  'production house, please share the details of the film with '
+                  '<br/>synopsis@bookmyshow.com',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?time_continue=1&v=ddRyInAwFl0',
+ 'movieType': 'MT'}
+2018-01-23 00:59:10 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069342-MT/20180124
+2018-01-23 00:59:10 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069342-MT/20180124
+2018-01-23 00:59:10 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069342-MT/20180124
+2018-01-23 00:59:10 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00069342
+2018-01-23 00:59:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'censor': 'U',
+ 'duration': '103',
+ 'genre': '|ANIMATION|COMEDY|DRAMA|',
+ 'groupId': 'EG00038704',
+ 'groupName': 'Paddington 2'}
+2018-01-23 00:59:10 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00055868-MT/20180124
+2018-01-23 00:59:10 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00055868-MT/20180124
+2018-01-23 00:59:10 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00055868-MT/20180124
+2018-01-23 00:59:10 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00055868
+2018-01-23 00:59:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'UA',
+ 'duration': '161',
+ 'genre': '|ACTION|THRILLER|',
+ 'groupId': 'EG00028338',
+ 'groupName': 'Tiger Zinda Hai'}
+2018-01-23 00:59:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069426-MT/20180125> from <GET https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069426-MT/20180124>
+2018-01-23 00:59:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Animation': [], 'Plays': ['Comedy', 'Drama']},
+ 'movieDimension': '2D',
+ 'movieDuration': '103',
+ 'movieId': 'ET00057858',
+ 'movieLanguage': 'English',
+ 'movieName': 'Paddington 2',
+ 'movieStartDate': '2018-01-12',
+ 'movieSynopsis': 'The much-anticipated sequel to the worldwide hit family '
+                  'film finds Paddington happily settled with the Brown family '
+                  'in Windsor Gardens, where he has become a popular member of '
+                  'the community, spreading joy and marmalade wherever he '
+                  'goes. While searching for the perfect present for his '
+                  "beloved Aunt Lucy's hundredth birthday, Paddington spots a "
+                  "unique pop-up book in Mr. Gruber's antique shop, and "
+                  'embarks upon a series of odd jobs to buy it. But when the '
+                  "book is stolen, it's up to Paddington and the Browns to "
+                  'unmask the thief.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=07Um1PY_P4o',
+ 'movieType': 'MT'}
+2018-01-23 00:59:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Plays': ['Action', 'Thriller']},
+ 'movieDimension': '2D',
+ 'movieDuration': '161',
+ 'movieId': 'ET00046433',
+ 'movieLanguage': 'Hindi',
+ 'movieName': 'Tiger Zinda Hai',
+ 'movieStartDate': '2017-12-22',
+ 'movieSynopsis': 'The sequel to the blockbuster Ek Tha Tiger, Tiger Zinda Hai '
+                  'carries forward the story of two spies, Tiger (played by '
+                  'Salman Khan) and Zoya (played by Katrina Kaif), eight years '
+                  'after their previous mission.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=ePO5M5DE01I',
+ 'movieType': 'MT'}
+2018-01-23 00:59:11 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00057858-MT/20180124
+2018-01-23 00:59:11 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00057858-MT/20180124
+2018-01-23 00:59:11 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00057858-MT/20180124
+2018-01-23 00:59:11 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00057858
+2018-01-23 00:59:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Animation': [], 'Plays': ['Comedy', 'Drama']},
+ 'movieDimension': '4DX',
+ 'movieDuration': '103',
+ 'movieId': 'ET00069053',
+ 'movieLanguage': 'English',
+ 'movieName': 'Paddington 2 (2D) (4DX)',
+ 'movieStartDate': '2018-01-12',
+ 'movieSynopsis': 'The much-anticipated sequel to the worldwide hit family '
+                  'film finds Paddington happily settled with the Brown family '
+                  'in Windsor Gardens, where he has become a popular member of '
+                  'the community, spreading joy and marmalade wherever he '
+                  'goes. While searching for the perfect present for his '
+                  "beloved Aunt Lucy's hundredth birthday, Paddington spots a "
+                  "unique pop-up book in Mr. Gruber's antique shop, and "
+                  'embarks upon a series of odd jobs to buy it. But when the '
+                  "book is stolen, it's up to Paddington and the Browns to "
+                  'unmask the thief.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=07Um1PY_P4o',
+ 'movieType': 'MT'}
+2018-01-23 00:59:12 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00046433-MT/20180124
+2018-01-23 00:59:12 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00046433-MT/20180124
+2018-01-23 00:59:12 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00046433-MT/20180124
+2018-01-23 00:59:12 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00046433
+2018-01-23 00:59:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'UA',
+ 'duration': '149',
+ 'genre': '|DRAMA|ROMANCE CO|',
+ 'groupId': 'EG00047237',
+ 'groupName': ' 3 Gante 30 Dina 30 Second'}
+2018-01-23 00:59:12 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069053-MT/20180124
+2018-01-23 00:59:12 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069053-MT/20180124
+2018-01-23 00:59:12 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00069053-MT/20180124
+2018-01-23 00:59:12 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00069053
+2018-01-23 00:59:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'censor': 'A',
+ 'duration': '110',
+ 'genre': '|DRAMA|MYSTERY|',
+ 'groupId': 'EG00047148',
+ 'groupName': 'Nirdosh'}
+2018-01-23 00:59:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Plays': ['Drama', 'Romance']},
+ 'movieDimension': '2D',
+ 'movieDuration': '149',
+ 'movieId': 'ET00067176',
+ 'movieLanguage': 'Kannada',
+ 'movieName': '3 Gante 30 Dina 30 Second',
+ 'movieStartDate': '2018-01-19',
+ 'movieSynopsis': '3 Gante 30 Dina 30 Second showcases how a reality game that '
+                  'takes place between the hero and the heroine for 3 hours, '
+                  'leads them into facing complications for 30 days, but in '
+                  'the end, gets solved in 30 seconds.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=7xr2f5Z19kY&feature=youtu.be',
+ 'movieType': 'MT'}
+2018-01-23 00:59:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://in.bookmyshow.com/bengaluru/movies/padmaavat-tamil/ET00069202> from <GET https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00069202>
+2018-01-23 00:59:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Mystery': [], 'Plays': ['Drama']},
+ 'movieDimension': '2D',
+ 'movieDuration': '110',
+ 'movieId': 'ET00067088',
+ 'movieLanguage': 'Hindi',
+ 'movieName': 'Nirdosh',
+ 'movieStartDate': '2018-01-19',
+ 'movieSynopsis': 'A police officer takes up the responsibility of solving a '
+                  'murder case, for which a woman is arrested. Further '
+                  'interrogation brings several possibilities and suspects to '
+                  'light, creating new challenges in the case.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=9QgS-2ZvO28',
+ 'movieType': 'MT'}
+2018-01-23 00:59:13 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067176-MT/20180124
+2018-01-23 00:59:13 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067176-MT/20180124
+2018-01-23 00:59:13 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067176-MT/20180124
+2018-01-23 00:59:13 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00067176
+2018-01-23 00:59:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'UA',
+ 'duration': '128',
+ 'genre': '|BIOPIC|DRAMA|WAR|',
+ 'groupId': 'EG00043179',
+ 'groupName': 'Darkest Hour'}
+2018-01-23 00:59:13 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067088-MT/20180124
+2018-01-23 00:59:13 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067088-MT/20180124
+2018-01-23 00:59:13 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00067088-MT/20180124
+2018-01-23 00:59:13 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00067088
+2018-01-23 00:59:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'censor': 'A',
+ 'duration': '103',
+ 'genre': '|HORROR|THRILLER|',
+ 'groupId': 'EG00031965',
+ 'groupName': 'Insidious: The Last Key'}
+2018-01-23 00:59:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'jsonGenre': {'Biography': [], 'Plays': ['Drama'], 'War': []},
+ 'movieDimension': '2D',
+ 'movieDuration': '128',
+ 'movieId': 'ET00062636',
+ 'movieLanguage': 'English',
+ 'movieName': 'Darkest Hour',
+ 'movieStartDate': '2018-01-19',
+ 'movieSynopsis': 'In the early days of the World War II, as the threat of '
+                  'invasion by the rampaging German Nazi forces led by Hitler '
+                  'is imminent, the fate of Western Europe hangs in the hands '
+                  'of the newly-appointed British Prime Minister, Winston '
+                  'Churchill. He must decide whether to negotiate terms with '
+                  'the German dictator or fight against all odds. Whatever he '
+                  'decides will change the course of world history.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=LtJ60u7SUSw',
+ 'movieType': 'MT'}
+2018-01-23 00:59:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=462622527278>
+{'jsonGenre': {'Horror': [], 'Plays': ['Thriller']},
+ 'movieDimension': '2D',
+ 'movieDuration': '103',
+ 'movieId': 'ET00050641',
+ 'movieLanguage': 'English',
+ 'movieName': 'Insidious: The Last Key',
+ 'movieStartDate': '2018-01-05',
+ 'movieSynopsis': 'The fourth installment of the Insidious series takes us '
+                  'back in time, highlighting the time when Dr. Elise Rainier, '
+                  'in her youth, lived in her family home in New Mexico, faced '
+                  'her most fearsome haunting being haunted by a demonic '
+                  'spirit that pushed her deeper into the Further.',
+ 'movieTrailerURL': 'https://www.youtube.com/watch?v=acQyrwQyCOk',
+ 'movieType': 'MT'}
+2018-01-23 00:59:13 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00062636-MT/20180124
+2018-01-23 00:59:13 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00062636-MT/20180124
+2018-01-23 00:59:13 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00062636-MT/20180124
+2018-01-23 00:59:13 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00062636
+2018-01-23 00:59:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://in.bookmyshow.com/serv/getData?cmd=QUICKBOOK&type=MT&getRecommendedData=1&_=709385085091>
+{'censor': 'UA',
+ 'duration': '136',
+ 'genre': '|DRAMA|ROMANCE CO|THRILLER|',
+ 'groupId': 'EG00038703',
+ 'groupName': 'Mayaanadhi'}
+2018-01-23 00:59:14 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00050641-MT/20180124
+2018-01-23 00:59:14 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00050641-MT/20180124
+2018-01-23 00:59:14 [root] INFO: getting timing info for url https://in.bookmyshow.com/buytickets/tiger-zinda-hai-bengaluru/movie-bang-ET00050641-MT/20180124
+2018-01-23 00:59:14 [root] INFO: getting meta for url :https://in.bookmyshow.com/bengaluru/movies/tiger-zinda-hai/ET00050641
